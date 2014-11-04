@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- our css -->
+		<link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+		<title>Me Time</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Emer Paul Luca Maurizio Steven" />
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+		<!-- for sliding toogle -->
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		
+<!-- script for the slide toggle on the headings, one for each panel else they all show at once-->
+	<script> 
+		$(document).ready(function(){
+		  $("#flip1").click(function(){
+			$("#panel1").slideToggle("slow");
+		  });
+		});
+	
+		$(document).ready(function(){
+		  $("#f2").click(function(){
+			$("#p2").slideToggle("slow");
+		  });
+		});
+
+		$(document).ready(function(){
+		  $("#f3").click(function(){
+			$("#p3").slideToggle("slow");
+		  });
+		});
+		$(document).ready(function(){
+		  $("#f4").click(function(){
+			$("#p4").slideToggle("slow");
+		  });
+		});
+		$(document).ready(function(){
+		  $("#f5").click(function(){
+			$("#p5").slideToggle("slow");
+		  });
+		});
+		$(document).ready(function(){
+		  $("#f6").click(function(){
+			$("#p6").slideToggle("slow");
+		  });
+		});
+	</script>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div id="topcontainer">
+			<header>
+				<div class="logobox">
+					<img src="image/clock.png" alt="Me Time Logo" >				
+				</div>
+				<h1>Me Time!</h1>
+			</header>
+			<br />
+			
+			<div id="menucontainer">
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="movies.html">Movies</a></li>
+						<li class="current"><a href="#">TV shows</a></li>
+						<li><a href="food.html">Food</a></li>
+						<li><a href="culture.html">Culture</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<br /><br />
+		</div>
+		<div id="contentcontainer">
+<!-- content -->
+			
+	 <!-- sliding boxes for content -->
+			<div class="content" id="box1">
+				<div id="flip1">
+					<h2>You title goes here +</h2>
+				</div>
+				<div id="panel1">
+					<img src="image/image file name here" alt="text to desc image" align="left">
+					<p>content text 
+					</p>
+					
+				</div>
+			
+			</div>
+			
+			<div class="content" id="box2">
+				<div id="f2">
+					<h2>title +</h2>
+				</div>
+				<div id="p2">
+			
+						<img src="image/+++" alt="+++" align="left">
+						<p>+++
+						</p>
+				</div>
+			</div>	
+			
+			<div class="content" id="box3">
+				<div id="f3"><h2>title + </h2></div>
+				<div id="p3">
+					<img src="image/+++" alt="+++" align="left">
+					<p>+++ 
+					</p>
+				</div>
+			</div>
+			<div class="content" id ="box4">
+				<div id="f4"><h2>title +</h2></div>
+				<div id="p4">
+					<img src="image/+++" alt="+++" align="left">
+					<p>+++
+					</p>
+					<a href = "https://www.google.com" target="_blank" >link to google page in new tab</a>
+				</div>		
+			</div>
+			<div class="content" id ="box5">
+				<div id="f5"><h2>title +</h2></div>
+				<div id="p5">
+					<img src="image/+++" alt="+++" align="left">
+					<p>+++
+					</p>
+					<a href = "https://www.google.com" target="_blank" >link to google page in new tab</a>
+				</div>		
+			</div>
+			<div class="content" id ="box6">
+				<div id="f6">
+					<h2>title +</h2>
+				</div>
+				<div id="p6">
+					<img src="image/+++" alt="+++" align="left">
+					<p>+++
+					</p>
+					<a href = "https://www.google.com" target="_blank" >link to google page in new tab</a>
+				</div>		
+			</div>
+<!-- end of content section -->			
+		</div>	
+		<footer>
+			<br />
+			<!-- javascript for getting and display of current date, without the time -->
+				<script>
+					var today = new Date();
+					var dd = today.getDate();
+					var mm = today.getMonth()+1; //January is 0!
+
+					var yyyy = today.getFullYear();
+					if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = dd+'-'+mm+'-'+yyyy;
+					document.write(today);
+				</script>
+			<p>&copy;2014 Emer, Luca, Maurizio, Paul, Steven</p>
+		</footer>
+	</div>	
+	</body>
+
+</html>
