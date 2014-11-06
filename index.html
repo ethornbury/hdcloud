@@ -15,6 +15,12 @@
 		<!-- for sliding toogle -->
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src ="http://code.jquery.com/jquery-1.11.1.js"></script>
+		
+		<!--slideshow style and script-->
+		<link rel="stylesheet" type="text/css" href="style/slideShow.css">
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery.cycle2.min.js"></script>
+		<script src="js/jquery.cycle2.caption2.min.js"></script>
 	
 	</head>
 	
@@ -50,7 +56,34 @@
 	 there is no styling for contentcontainer but it does wrap the content boxes on all pages
 	 
 	 -->
-		<p><del>Testing GIT</del></p>	
+	 <div class="cycle-slideshow" 
+				data-cycle-fx="scrollHorz" 
+				data-cycle-timeout="3000"
+				data-cycle-slides="> a"
+				data-cycle-caption-plugin=caption2
+                    data-cycle-overlay-fx-out="slideUp"
+                    data-cycle-overlay-fx-in="slideDown"
+				>
+				<div class="cycle-pager"></div>
+    			
+				<a href="movies.html">
+					<img src="image/Cinema600_400.jpg" >
+					<div class="cycle-overlay"><strong>Cinema</strong><br/>Our favourite movies reviewed</div>
+				</a>
+				<a href="tv.html">
+					<img src="image/watchingTv600_400.jpg" >
+					<div class="cycle-overlay"><strong>Staying In</strong><br/>The very best of TV viewing for nights in</div>
+				</a>
+				<a href="food.html">
+					<img src="image/caponata600_400.jpg" >
+					<div class="cycle-overlay"><strong>Culinary Challenge</strong><br/>Try out these tasty recipies</div>
+				</a>
+				<a href="culture.html">
+					<img src="image/books600_400.jpg" >
+					<div class="cycle-overlay"><strong>Culture Vulture</strong><br/>From classy galleries to addictive novels</div>
+				</a>
+		</div>
+		
 			
 			
 		</div>
