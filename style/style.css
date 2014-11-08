@@ -8,8 +8,11 @@
          url('Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
     font-weight: 550;
     font-style: normal;
+	
 }
-
+p{
+line-height:30px;
+}
 #wrapper{
 background-image: url("../image/brickwall_@2X.png");
 /*dark grey background colour in case img not working */
