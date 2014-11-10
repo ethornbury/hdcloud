@@ -166,12 +166,35 @@ background:#C5B585;
 background-clip:padding-box;
 }
 
+#ingredients {
+width:26%;
+display: inline-block;
+
+}
+#instructions  {
+width:67%;
+display: inline-block;
+}
 #box7, #box8, #box9, #box10{
-background:red;
-color:#b3b3b3;
+background:white;
+color:#000;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
+}
+#fcolumnsection{
+width:100%;
+height: auto;
+}
+#fimage{
+width:26%;
+height: auto;
+display: inline-block;
+}
+#fdesc{
+width:67%;
+height: auto;
+display: inline-block;
 }
 
 #box11, #box12, #box13, #box14{
