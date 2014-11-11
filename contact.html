@@ -17,21 +17,16 @@
 		
 <!-- script for the slide toggle on the headings, one for each panel else they all show at once-->
 	<script> 
-	
-	
-	
-
 		$(document).ready(function(){
-		  $("#flip3").click(function(){
-			$("#panel3").slideToggle("slow");
+		  $("#f21").click(function(){
+			$("#p21").slideToggle("slow");
 		  });
 		});
 		
-		$(document).ready(function(){
-		  $("#flip5").click(function(){
-			$("#panel5").slideToggle("slow");
-		  });
-		});
+		function formReset()
+		{
+		document.getElementById("frm1").reset();
+		}
 	</script>
 	</head>
 	
@@ -39,13 +34,16 @@
 	<div id="wrapper">
 		<div id="topcontainer">
 			<header>
+			<div class="header">
 				<div class="logobox">
-					<img src="image/clock.png" alt="Me Time Logo" >				
+					<img src="image/clock903.png" alt="Me Time Logo" >				
 				</div>
-				<h1>Me Time!</h1>
+				<h1>Me Time!<span class="tagline">&ensp;&ensp; 
+					Place for tagline to grab attention, explain site in 4 seconds.
+				</span></h1>
+			</div>	
 			</header>
-			<br />
-			
+		</div>
 			<div id="menucontainer">
 				<nav class="nav">
 					<ul>
@@ -58,20 +56,39 @@
 					</ul>
 				</nav>
 			</div>
-			<br /><br />
-		</div>
+		
 		<div id="contentcontainer">
 	<!-- content -->
-			
-			
-			
-			
-			
-			
-			
+		<div class="content" id="box21">
+				<div id="f21">
+					<h2>We would love your feedback +</h2>
+				</div>
+				<div id="p21">
+					<form method="post" action="mailto:emer.thornbury@mystudent.ncirl.ie" >
+						<div id="formbox">
+							<h2>get in contact:</h2>
+							<label> <span> Your Name</span><input id="fname" type="text" name="name" placeholder="&ensp;your name" required/>  
+							</label>
+							
+							<label><span>Email Address (required)</span><input id="femail" type="text" name="email" placeholder="&ensp;your email" required />
+							</label>
+							
+							<label><span>Subject</span><input id="fsubject" type="text" name="subject" placeholder="&ensp;your topic"/>
+							</label>
+							
+							<label>
+								<span>Message</span><textarea id="ffeedback" name="feedback" placeholder="&ensp;your message"></textarea>
+							</label>
+							<input class="button" type="button" value="Submit" />
+							<input class="button" type="button" onclick="formReset()" value="Reset" />
+							
+						</div>	
+					</form>
+				</div>
+			</div>
+		
 	<!-- end of content section -->	
 		</div>
-		
 		<footer>
 			<br />
 			<!-- javascript for getting and display of current date, without the time -->

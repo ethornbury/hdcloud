@@ -8,13 +8,11 @@
          url('Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
     font-weight: 550;
     font-style: normal;
-	
 }
-p{
-line-height:30px;
-}
+
 #wrapper{
-background-image: url("../image/brickwall_@2X.png");
+background-image:url("../image/brickwall_@2X.png");
+/*background-image: url("../image/brick6.jpg");
 /*dark grey background colour in case img not working */
 background-color:#6A7070; 
 font-family: myFont,'Myriad Pro',Helvetica, sans-serif;
@@ -23,11 +21,11 @@ padding:5%;
 }
 
 #topcontainer{
-min-height:130px;
+min-height:100px;
 width:90%;
-background:#A9C6FF;
+background:#6067FE;
 margin: 0 auto;
-padding:10px;
+/*padding:5px;*/
 
 -webkit-box-shadow: 0px 0px 5px #000;
 -moz-box-shadow: 0px 0px 5px #000;
@@ -37,28 +35,34 @@ box-shadow: 0px 0px 5px #000;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 
-border: 8px solid transparent;
+border: 10px solid transparent;
 }
 
-h1{
-line-height:100px;
-}
-
-header{
+.header{
 height:100px;
-padding:10px 0 10px 0;
+padding:5px 0 5px 0;
 }
 
 .logobox{
 float:left;
-width:100px;
-height:100px;
-margin:10px;
+width:95px;
+height:95px;
+margin-right:10px;
+
 
 }
 
+h1{
+line-height:70px;
+}
+
+.tagline{
+font-size:14pt;
+font-style:italic;
+}
+
 #menucontainer{
-width:75%;
+width:65%;
 margin:0 auto;
 font-weight:bold;
 padding:0 20px 0 20px;
@@ -104,6 +108,8 @@ font:12px;
 /*font: 2em;*/
 font-weight: bold;
 font-style: normal;
+line-height:30px;
+
 }
 
 img{
@@ -114,7 +120,7 @@ h2{
 text-align:center;
 }
 
-#flip1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12, #f13, #f14, #f15, #f16, #f17, #f18, #f19, #f20{
+#flip1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12, #f13, #f14, #f15, #f16, #f17, #f18, #f19, #f20, #f21{
 margin:0 auto;
 cursor:pointer;
 padding:2px;
@@ -127,7 +133,7 @@ margin:0 auto;
 display: block;
 }
 
-#panel1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19 ,#p20{
+#panel1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21{
 display:none;
 padding:2px;
 height:auto;
@@ -136,7 +142,7 @@ height:auto;
 .content{
 background:#fff;
 height:auto;
-width:80%;
+width:90%;
 margin: 30px auto;
 padding: 10px;
 
@@ -181,23 +187,35 @@ background:red;
 background-clip:padding-box;
 }
 
-#box15, #box16, #box17, #box18, #box19, #box20{
-background:red;
+#box15, #box17, #box19, #box20{
+background:#592F97;
+color:#D3D8E4;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 }
-
-/*
-#box3{
-background:#yellow;
+#p15 a, #p17 a{
+color:#D3D8E4;
+}
+#box16, #box18{
+background:#363B9A;
+color:#D4B6FF;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 }
+#p16, #p18 a{
+color:#D4B6FF;
+}
 
-*/
-
+#box21{
+text-align:center;
+background:#592F97;
+color:#D3D8E4;
+-moz-background-clip:padding;
+-webkit-background-clip:padding;
+background-clip:padding-box;
+}
 
 footer{
 height:auto;
@@ -208,12 +226,12 @@ width:90%;
 margin: 0 auto;
 }
 
-/*form css
+/*form css*/
 #formbox{
 margin:0 auto;
-background:#A9C6FF;
-width:50%;
-height:460px;
+background:#6067FE;
+width:60%;
+height:470px;
 font-style:italic;
 line-height:30px;
 font-weight:bold;
@@ -224,37 +242,53 @@ border:1px solid #0c0c0c;
 }
 
 input{
+margin:0 auto;
 width:70%;
 display:block;
 border:1px solid #0c0c0c;
 height:30px;
 cursor:pointer;
+/* border radius cross browser*/
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
 }
 
-textarea#fdback{
+textarea#ffeedback{
+margin:0 auto;
 cursor:pointer;
 width:70%;
-height:150px;
+height:100px;
 border:1px solid #0c0c0c;
 display:block;
+/* border radius cross browser*/
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
 }
 
 input.button
 {
-margin:5px;
-width:120px;
+display:inline;
+margin-top:10px;
+width:100px;
 position:top;
 background:#fff;
 color:#0c0c0c;
 height:30px;
 border:1px solid #003300;
+
+/* border radius cross browser*/
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
 }
 
 input.button:hover{
-color:#A9C6FF;
+color:#592F97;
 cursor:pointer;
 }
-*/
+
 
 @media screen and (max-width: 300px) {
 #flip1_image{
@@ -266,7 +300,11 @@ cursor:pointer;
 
 @media screen and (max-width: 600px) {
 	h1{
-	font-size:18px;
+	font-size:14px;
+	}
+	.tagline{
+	display:none;
+	/*font-size:12px;*/
 	}
 	h2{
 	font-size:14px;
@@ -328,15 +366,11 @@ cursor:pointer;
 	#flip1_image{
 	display: none;
 	}
+	#formbox{
+	width:90%;
+	font-size:12px;
+	}
 }
-
-
-/* border radius cross browser
--webkit-border-radius:10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-
-*/
 
 .youtube-player{
 /*height: 390px;
