@@ -118,9 +118,10 @@ margin:5px;
 
 h2{
 text-align:center;
+line-height: 15px;
 }
 
-#flip1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12, #f13, #f14, #f15, #f16, #f17, #f18, #f19, #f20, #f21, #f22{
+#flip1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12, #f13, #f14, #f15, #f16, #f17, #f18, #f19, #f20, #f21,#f22{
 margin:0 auto;
 cursor:pointer;
 padding:2px;
@@ -133,7 +134,7 @@ margin:0 auto;
 display: block;
 }
 
-#panel1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21, #p22{
+#panel1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21,#p22{
 display:none;
 padding:2px;
 height:auto;
@@ -172,15 +173,6 @@ background:#C5B585;
 background-clip:padding-box;
 }
 
-#ingredients {
-width:26%;
-display: inline-block;
-
-}
-#instructions  {
-width:67%;
-display: inline-block;
-}
 #box7, #box8, #box9, #box10{
 background:white;
 color:#000;
@@ -188,19 +180,48 @@ color:#000;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 }
-#fcolumnsection{
+h3 {
+text-align: center;
+line-height: 15px;
+}
+.fheader  {
 width:100%;
-height: auto;
+position: relative;
+margin: .05em; 
 }
-#fimage{
-width:26%;
+.fimage{
+width:34%;
+height: auto;
+float: left;
+display: inline-block;
+border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
+}
+
+.fdesc{
+font-size: 14px;
+width:62%;
 height: auto;
 display: inline-block;
+border: 0px solid  #ccc; padding: .05em; 
 }
-#fdesc{
-width:67%;
+.fcolumnsection{
+width:100%;
+position: relative;
+margin: .5em; 
+}
+.ingredients {
+font-size: 12px;
+width:34%;
+height: auto;
+float: left;
+display: inline-block;
+border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
+}
+.instructions  {
+width:62%;
 height: auto;
 display: inline-block;
+border: 0px solid  #ccc; padding: .05em; 
 }
 
 #box11, #box12, #box13, #box14{
@@ -210,7 +231,7 @@ background:red;
 background-clip:padding-box;
 }
 
-#box15, #box17, #box19, #box22{
+#box15, #box17, #box19, #box20{
 background:#592F97;
 color:#D3D8E4;
 -moz-background-clip:padding;
@@ -220,7 +241,7 @@ background-clip:padding-box;
 #p15 a, #p17 a{
 color:#D3D8E4;
 }
-#box16, #box18, #box20{
+#box16, #box18{
 background:#363B9A;
 color:#D4B6FF;
 -moz-background-clip:padding;
@@ -314,11 +335,41 @@ cursor:pointer;
 
 
 @media screen and (max-width: 300px) {
-#flip1_image{
-	display: none;
-	}
 
-
+.fheader:before {
+    content: '';
+    float: left;
+    display: block;
+    width: 100%;
+}
+.fimage{
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
+}
+.fdesc{
+border: 0px solid  #ccc; padding: .05em; 
+}
+.fcolumnsection:before {
+    content: '';
+    float: left;
+    display: block;
+    width: 100%;
+}
+.ingredients {
+font-size: 8px;
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
+}
+.instructions  {
+border: 0px solid  #ccc; padding: .05em;  
+}
+	
 }
 
 @media screen and (max-width: 600px) {
