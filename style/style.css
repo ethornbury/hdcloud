@@ -1,4 +1,6 @@
-
+html {
+	-webkit-font-smoothing: antialiased;
+}
 @font-face {
     font-family: myFont;
     src: url('Blokletters-Balpen-webfont.eot');
@@ -62,7 +64,7 @@ font-style:italic;
 }
 
 #menucontainer{
-width:65%;
+width:70%;
 margin:0 auto;
 font-weight:bold;
 padding:0 20px 0 20px;
@@ -98,10 +100,10 @@ padding:0 20px 0 20px;
 	color: #fff;
 	border-radius: 5px;
 }
-/* center nav */
+/* center nav 
 .nav.center ul {
 	text-align: center;
-}
+}*/
 
 p{
 font:12px;
@@ -372,19 +374,22 @@ border: 0px solid  #ccc; padding: .05em;
 	
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	h1{
-	font-size:14px;
+	font-size:15pt;
 	}
 	.tagline{
 	display:none;
 	/*font-size:12px;*/
 	}
+	h3{
+	font-size:13pt;
+	}
 	h2{
-	font-size:14px;
+	font-size:12pt;
 	}
 	p{
-	font-size:12px;
+	font-size:10pt;
 	}
 	.nav {
 		position: relative;
