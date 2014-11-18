@@ -1,4 +1,4 @@
-
+/*meTime: Slideshow and Welcome Message styling for Home Page*/
 
 /* set border-box so that percents can be used for width, padding, etc (personal preference) */
 .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -80,6 +80,7 @@
     .cycle-slideshow { width: 200px;}
     .cycle-overlay { padding: 4px }
     .cycle-caption { bottom: 4px; right: 4px }
+	
 }
 
 
@@ -87,12 +88,14 @@
 
 /*welcomemessage stuff*/
 #welcomeMessage {border: 1px solid black;
+				border-top-right-radius:2em;
+				border-bottom-right-radius:2em;
 				width: 28%;
-				background: white;
+				background-color: #B2B6FE;
 				float: right;
 				text-align: justify;
 				padding: 0 5px 0 5px;
-				margin: 0 50px 0 10px;
+				margin: 0 47px 0 10px;
 				height: 466px;
 				-webkit-box-shadow: 0px 0px 5px #000;
 				-moz-box-shadow: 0px 0px 5px #000;
