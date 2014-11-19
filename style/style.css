@@ -1,6 +1,40 @@
 html {
 	-webkit-font-smoothing: antialiased;
 }
+
+@font-face {
+    font-family: myFont;
+    src: url('OpenSans-Light-webfont.eot');
+    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Light-webfont.woff') format('woff'),
+         url('OpenSans-Light-webfont.ttf') format('truetype'),
+         url('OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
+    font-weight: 550;
+    font-style: normal;
+	}
+/*
+@font-face {
+    font-family: myFont;
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#OpenSans-Regular') format('svg');
+    font-weight: 550;
+    font-style: normal;
+	}
+/*
+@font-face {
+    font-family: myFont;
+    src: url('goodfoot-webfont.eot');
+    src: url('goodfoot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('goodfoot-webfont.woff') format('woff'),
+         url('goodfoot-webfont.ttf') format('truetype'),
+         url('goodfoot-webfont.svg#goodfoot') format('svg');
+    font-weight: 550;
+    font-style: normal;
+	}	
+
 @font-face {
     font-family: myFont;
     src: url('Blokletters-Balpen-webfont.eot');
@@ -12,9 +46,20 @@ html {
     font-style: normal;
 }
 
+*/
+@font-face {
+    font-family: myHeading;
+    src: url('Kingthings_Wrote-webfont.eot');
+    src: url('Kingthings_Wrote-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Kingthings_Wrote-webfont.woff') format('woff'),
+         url('Kingthings_Wrote-webfont.ttf') format('truetype'),
+         url('Kingthings_Wrote-webfont.svg#Kingthings_Wrote') format('svg');
+    font-weight: 550;
+    font-style: normal;
+	}
+
 #wrapper{
 background-image:url("../image/brickwall_@2X.png");
-/*background-image: url("../image/brick6.jpg");
 /*dark grey background colour in case img not working */
 background-color:#6A7070; 
 font-family: myFont,'Myriad Pro',Helvetica, sans-serif;
@@ -55,6 +100,7 @@ margin-right:10px;
 }
 
 h1{
+font-family: myHeading;
 line-height:70px;
 }
 
@@ -119,6 +165,7 @@ margin:5px;
 }
 
 h2{
+font-family: myHeading;
 text-align:center;
 line-height: 15px;
 }
@@ -183,6 +230,7 @@ color:#000;
 background-clip:padding-box;
 }
 h3 {
+font-family: myHeading;
 text-align: center;
 line-height: 15px;
 }
