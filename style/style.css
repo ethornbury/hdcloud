@@ -226,12 +226,42 @@ display: inline-block;
 border: 0px solid  #ccc; padding: .05em; 
 }
 
-#box11, #box12, #box13, #box14{
+/*LUCA CSS*/
+
+#box11
+{
 background:red;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
+color:white;
 }
+#box12
+{
+background:black;
+-moz-background-clip:padding;
+-webkit-background-clip:padding;
+background-clip:padding-box;
+color:#96BFE8;
+
+}
+#box13
+{
+background:black;
+-moz-background-clip:padding;
+-webkit-background-clip:padding;
+background-clip:padding-box;
+color:white;
+}
+#box14
+{
+background:black;
+-moz-background-clip:padding;
+-webkit-background-clip:padding;
+background-clip:padding-box;
+color:white;
+}
+/*LUCA CSS*/
 
 #box15, #box17, #box19, #box22{
 background:#592F97;
