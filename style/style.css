@@ -183,10 +183,14 @@ margin:0 auto;
 display: block;
 }
 
-#panel1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21, #p22{
+#panel1, #p2, #p3, #p4, #p5, #p6, #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20, #p21,#p22{
 display:none;
 padding:2px;
 height:auto;
+}
+#p7, #p8, #p9, #p10 {
+display:block;
+padding:2px;
 }
 
 .content{
@@ -234,43 +238,42 @@ font-family: myHeading;
 text-align: center;
 line-height: 15px;
 }
-.fheader  {
-width:100%;
-position: relative;
-margin: .05em; 
-}
 .fimage{
-width:34%;
-height: auto;
+height: 200px;
+width: 28%;
 float: left;
 display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
 border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
 }
 
 .fdesc{
 font-size: 14px;
-width:62%;
-height: auto;
+width: 65%;
+min-height: 220px;
 display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
 border: 0px solid  #ccc; padding: .05em; 
 }
-.fcolumnsection{
-width:100%;
-position: relative;
-margin: .5em; 
-}
+
 .ingredients {
-font-size: 12px;
-width:34%;
-height: auto;
+width: 28%;
+font-size: 13px;
 float: left;
+clear: both;
 display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
 border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
 }
 .instructions  {
-width:62%;
-height: auto;
+font-size: 13px;
+width: 65%;
 display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
 border: 0px solid  #ccc; padding: .05em; 
 }
 
@@ -419,39 +422,6 @@ cursor:pointer;
 
 @media screen and (max-width: 300px) {
 
-.fheader:before {
-    content: '';
-    float: left;
-    display: block;
-    width: 100%;
-}
-.fimage{
-position: absolute;
-top: 0;
-right: 0;
-width: 100%;
-border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
-}
-.fdesc{
-border: 0px solid  #ccc; padding: .05em; 
-}
-.fcolumnsection:before {
-    content: '';
-    float: left;
-    display: block;
-    width: 100%;
-}
-.ingredients {
-font-size: 8px;
-position: absolute;
-top: 0;
-right: 0;
-width: 100%;
-border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em; 
-}
-.instructions  {
-border: 0px solid  #ccc; padding: .05em;  
-}
 	
 }
 
@@ -464,10 +434,12 @@ border: 0px solid  #ccc; padding: .05em;
 	/*font-size:12px;*/
 	}
 	h3{
-	font-size:13pt;
+	font-size:10pt;
+	line-height:18px;
 	}
 	h2{
 	font-size:12pt;
+	line-height:20px;
 	}
 	p{
 	font-size:10pt;
@@ -530,6 +502,38 @@ border: 0px solid  #ccc; padding: .05em;
 	width:90%;
 	font-size:12px;
 	}
+	.fimage{
+		margin-left: 0px;
+		height: 170px;
+		margin-right: 0px;
+		padding: 0em; 
+		margin-bottom: 0em;
+	}
+	
+	.fdesc  {
+		width: 95%;
+		min-height: 20px;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	
+	.ingredients {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	.instructions  {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+
+	
 }
 
 .youtube-player{
