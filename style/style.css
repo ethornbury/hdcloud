@@ -9,7 +9,7 @@ html {
          url('OpenSans-Light-webfont.woff') format('woff'),
          url('OpenSans-Light-webfont.ttf') format('truetype'),
          url('OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
-    font-weight: 550;
+    font-weight: bolder;
     font-style: normal;
 	}
 /*
@@ -113,17 +113,18 @@ font-style:italic;
 width:70%;
 margin:0 auto;
 font-weight:bold;
-padding:0 20px 0 20px;
+/*padding:0 20px 0 20px;*/
 }
 
 /* nav */
 .nav {
 	position: relative;
-	margin: 20px 0;	
+	margin: 20px 0 0 100px;
 	padding:0 60px 0 60px;
 }
 .nav ul {
-	margin: 0;
+
+	margin: 0 auto;
 	padding: 0;
 }
 .nav li {
@@ -146,7 +147,7 @@ padding:0 20px 0 20px;
 	color: #fff;
 	border-radius: 5px;
 }
-/* center nav 
+ /*center nav 
 .nav.center ul {
 	text-align: center;
 }*/
@@ -447,6 +448,7 @@ cursor:pointer;
 	.nav {
 		position: relative;
 		min-height: 40px;
+		margin: 20px 0 0 0px;
 	}	
 	.nav ul {
 		width: 180px;
