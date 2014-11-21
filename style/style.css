@@ -190,8 +190,9 @@ padding:2px;
 height:auto;
 }
 #p7, #p8, #p9, #p10 {
-display:block;
+display:none;
 padding:2px;
+height:auto;
 }
 
 .content{
@@ -251,7 +252,7 @@ border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
 
 .fdesc{
 font-size: 14px;
-width: 65%;
+width: 55%;
 min-height: 220px;
 display: inline-block;
 margin-left: 20px;
@@ -271,7 +272,7 @@ border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
 }
 .instructions  {
 font-size: 13px;
-width: 65%;
+width: 55%;
 display: inline-block;
 margin-left: 20px;
 margin-right: 20px;
