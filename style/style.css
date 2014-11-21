@@ -64,7 +64,7 @@ background-image:url("../image/brickwall_@2X.png");
 background-color:#6A7070; 
 font-family: myFont,'Myriad Pro',Helvetica, sans-serif;
 color:#202222;
-padding:3%;
+padding:1% 3% 3% 3%;
 }
 
 #topcontainer{
@@ -72,6 +72,7 @@ min-height:100px;
 width:90%;
 background:#6067FE;
 margin: 0 auto;
+overflow:hidden;
 /*padding:5px;*/
 
 -webkit-box-shadow: 0px 0px 5px #000;
@@ -423,8 +424,114 @@ cursor:pointer;
 
 
 @media screen and (max-width: 300px) {
+h1{
+	font-size:13pt;
+	}
+	.tagline{
+	display:none;
+	/*font-size:12px;*/
+	}
+	h3{
+	font-size:9pt;
+	line-height:18px;
+	}
+	h2{
+	font-size:10pt;
+	line-height:20px;
+	}
+	p{
+	font-size:10pt;
+	}
+	.nav {
+		position: relative;
+		min-height: 40px;
+		margin: 20px 0 0 0px;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(../image/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
 
 	
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	#flip1_image{
+	display: none;
+	}
+	#formbox{
+	width:90%;
+	font-size:12px;
+	}
+	.fimage{
+		margin-left: 0px;
+		height: 170px;
+		margin-right: 0px;
+		padding: 0em; 
+		margin-bottom: 0em;
+	}
+	
+	.fdesc  {
+		width: 95%;
+		min-height: 20px;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	
+	.ingredients {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	.instructions  {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+
 }
 
 @media screen and (max-width: 800px) {
