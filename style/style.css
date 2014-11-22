@@ -284,7 +284,9 @@ border: 0px solid  #ccc; padding: .05em;
 
 #box11
 {
-background:red;
+background-image:url("../image/curtainr.jpg");
+background-position: center;
+background-repeat: repeat;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
@@ -301,7 +303,9 @@ color:#96BFE8;
 }
 #box13
 {
-background:black;
+background-image:url("../image/adv6.jpg");
+background-position: center;
+background-repeat: repeat;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
