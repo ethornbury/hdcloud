@@ -233,7 +233,9 @@ background-clip:padding-box;
 }
 
 #box7, #box8, #box9, #box10{
-background:white;
+background-image: url("../image/table.jpg");
+background-position: center;
+background-repeat: repeat;
 color:#000;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
