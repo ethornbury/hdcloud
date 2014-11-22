@@ -23,11 +23,22 @@
 		  });
 		});
 		
+		
 		function formReset()
 		{
 		document.getElementById("frm1").reset();
 		}
+		
+		
+		function validateForm() {
+			var x = document.forms["formbox"]["name"].value;
+			if (x == null || x == "") {
+				alert("First name must be filled out");
+				return false;
+			}
+		}
 	</script>
+	
 	</head>
 	
 	<body>
@@ -64,7 +75,8 @@
 					<h2>Send us your feedback +</h2>
 				</div>
 				<div id="p21">
-					<form method="post" action="mailto:emer.thornbury@mystudent.ncirl.ie" >
+				<!--	<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">-->
+					<form name = "formbox" method="post" action="mailto:emer.thornbury@mystudent.ncirl.ie" onsubmit="return validateForm()" >
 						<div id="formbox">
 							<h2>get in contact:</h2>
 							<label> <span> Your Name</span><input id="fname" type="text" name="name" placeholder="&ensp;your name" required/>  
@@ -79,7 +91,7 @@
 							<label>
 								<span>Message</span><textarea id="ffeedback" name="feedback" placeholder="&ensp;your message"></textarea>
 							</label>
-							<input class="button" type="button" value="Submit" />
+							<input class="button" type="submit" value="Submit" />
 							<input class="button" type="button" onclick="this.form.reset()" value="Reset" />
 							
 						</div>	
