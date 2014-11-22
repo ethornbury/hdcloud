@@ -9,7 +9,7 @@ html {
          url('OpenSans-Light-webfont.woff') format('woff'),
          url('OpenSans-Light-webfont.ttf') format('truetype'),
          url('OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
-    font-weight: bolder;
+    font-weight: bold;
     font-style: normal;
 	}
 /*
@@ -409,7 +409,7 @@ input.button
 display:inline;
 margin-top:10px;
 width:100px;
-position:top;
+/*position:top;*/
 background:#fff;
 color:#0c0c0c;
 height:30px;
