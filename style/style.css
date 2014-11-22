@@ -1,7 +1,7 @@
 html {
 	-webkit-font-smoothing: antialiased;
 }
-
+/*
 @font-face {
     font-family: myFont;
     src: url('OpenSans-Light-webfont.eot');
@@ -12,7 +12,7 @@ html {
     font-weight: bold;
     font-style: normal;
 	}
-/*
+*/
 @font-face {
     font-family: myFont;
     src: url('OpenSans-Regular-webfont.eot');
