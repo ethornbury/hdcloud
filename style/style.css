@@ -1,7 +1,7 @@
 html {
 	-webkit-font-smoothing: antialiased;
 }
-
+/*
 @font-face {
     font-family: myFont;
     src: url('OpenSans-Light-webfont.eot');
@@ -9,10 +9,10 @@ html {
          url('OpenSans-Light-webfont.woff') format('woff'),
          url('OpenSans-Light-webfont.ttf') format('truetype'),
          url('OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
-    font-weight: 550;
+    font-weight: bold;
     font-style: normal;
 	}
-/*
+*/
 @font-face {
     font-family: myFont;
     src: url('OpenSans-Regular-webfont.eot');
@@ -64,7 +64,7 @@ background-image:url("../image/brickwall_@2X.png");
 background-color:#6A7070; 
 font-family: myFont,'Myriad Pro',Helvetica, sans-serif;
 color:#202222;
-padding:3%;
+padding:1% 3% 3% 3%;
 }
 
 #topcontainer{
@@ -72,7 +72,7 @@ min-height:100px;
 width:90%;
 background:#6067FE;
 margin: 0 auto;
-/*padding:5px;*/
+overflow:hidden;
 
 -webkit-box-shadow: 0px 0px 5px #000;
 -moz-box-shadow: 0px 0px 5px #000;
@@ -95,8 +95,6 @@ float:left;
 width:95px;
 height:95px;
 margin-right:10px;
-
-
 }
 
 h1{
@@ -113,17 +111,18 @@ font-style:italic;
 width:70%;
 margin:0 auto;
 font-weight:bold;
-padding:0 20px 0 20px;
+/*padding:0 20px 0 20px;*/
 }
 
 /* nav */
 .nav {
 	position: relative;
-	margin: 20px 0;	
+	margin: 20px 0 0 100px;
 	padding:0 60px 0 60px;
 }
 .nav ul {
-	margin: 0;
+
+	margin: 0 auto;
 	padding: 0;
 }
 .nav li {
@@ -146,21 +145,27 @@ padding:0 20px 0 20px;
 	color: #fff;
 	border-radius: 5px;
 }
-/* center nav 
+ /*center nav 
 .nav.center ul {
 	text-align: center;
 }*/
 
 p{
 font:12px;
-/*font: 2em;*/
 font-weight: bold;
 font-style: normal;
 line-height:30px;
-
 }
 
 img{
+margin:5px;
+}
+.imgright{
+float:right;
+margin:5px;
+}
+.imgleft{
+float:left;
 margin:5px;
 }
 
@@ -189,8 +194,9 @@ padding:2px;
 height:auto;
 }
 #p7, #p8, #p9, #p10 {
-display:block;
+display:none;
 padding:2px;
+height:auto;
 }
 
 .content{
@@ -227,7 +233,9 @@ background-clip:padding-box;
 }
 
 #box7, #box8, #box9, #box10{
-background:white;
+background-image: url("../image/table.jpg");
+background-position: center;
+background-repeat: repeat;
 color:#000;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
@@ -250,7 +258,7 @@ border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
 
 .fdesc{
 font-size: 14px;
-width: 65%;
+width: 55%;
 min-height: 220px;
 display: inline-block;
 margin-left: 20px;
@@ -270,7 +278,7 @@ border: 0px solid  #ccc; padding: .05em; margin-bottom: .05em;
 }
 .instructions  {
 font-size: 13px;
-width: 65%;
+width: 55%;
 display: inline-block;
 margin-left: 20px;
 margin-right: 20px;
@@ -281,7 +289,9 @@ border: 0px solid  #ccc; padding: .05em;
 
 #box11
 {
-background:red;
+background-image:url("../image/curtainr.jpg");
+background-position: center;
+background-repeat: repeat;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
@@ -298,7 +308,9 @@ color:#96BFE8;
 }
 #box13
 {
-background:black;
+background-image:url("../image/adv6.jpg");
+background-position: center;
+background-repeat: repeat;
 -moz-background-clip:padding;
 -webkit-background-clip:padding;
 background-clip:padding-box;
@@ -402,7 +414,7 @@ input.button
 display:inline;
 margin-top:10px;
 width:100px;
-position:top;
+/*position:top;*/
 background:#fff;
 color:#0c0c0c;
 height:30px;
@@ -421,8 +433,114 @@ cursor:pointer;
 
 
 @media screen and (max-width: 300px) {
+h1{
+	font-size:13pt;
+	}
+	.tagline{
+	display:none;
+	/*font-size:12px;*/
+	}
+	h3{
+	font-size:9pt;
+	line-height:18px;
+	}
+	h2{
+	font-size:10pt;
+	line-height:20px;
+	}
+	p{
+	font-size:10pt;
+	}
+	.nav {
+		position: relative;
+		min-height: 40px;
+		margin: 20px 0 0 0px;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(../image/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
 
 	
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+	#flip1_image{
+	display: none;
+	}
+	#formbox{
+	width:90%;
+	font-size:12px;
+	}
+	.fimage{
+		margin-left: 0px;
+		height: 170px;
+		margin-right: 0px;
+		padding: 0em; 
+		margin-bottom: 0em;
+	}
+	
+	.fdesc  {
+		width: 95%;
+		min-height: 20px;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	
+	.ingredients {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+	.instructions  {
+		font-size: 16px;
+		width: 95%;
+		margin-left: 5px;
+		margin-right: 0px;
+		padding: 0em; 
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -447,6 +565,7 @@ cursor:pointer;
 	.nav {
 		position: relative;
 		min-height: 40px;
+		margin: 20px 0 0 0px;
 	}	
 	.nav ul {
 		width: 180px;
@@ -542,7 +661,7 @@ width: 480px;*/
 height: 210px;
 width: 300px;
 padding: 0px;
-margin-left: 10px auto;
-margin-bottom: 10px auto;
+/*margin-left: 10px auto;
+margin-bottom: 10px auto;*/
 
 }
