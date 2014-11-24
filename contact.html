@@ -33,7 +33,23 @@
 		function validateForm() {
 			var x = document.forms["formbox"]["name"].value;
 			if (x == null || x == "") {
-				alert("First name must be filled out");
+				alert("Name must be filled out");
+				return false;
+			}
+		}
+		
+		function validateForm() {
+			var x = document.forms["formbox"]["email"].value;
+			if (x == null || x == "") {
+				alert("Email must be filled out");
+				return false;
+			}
+		}
+		
+		function validateForm() {
+			var x = document.forms["formbox"]["feedback"].value;
+			if (x == null || x == "") {
+				alert("There is no message!");
 				return false;
 			}
 		}
@@ -75,7 +91,6 @@
 					<h2>Send us your feedback +</h2>
 				</div>
 				<div id="p21">
-				<!--	<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">-->
 					<form name = "formbox" method="post" action="mailto:emer.thornbury@mystudent.ncirl.ie" onsubmit="return validateForm()" >
 						<div id="formbox">
 							<h2>get in contact:</h2>
@@ -92,18 +107,18 @@
 								<span>Message</span><textarea id="ffeedback" name="feedback" placeholder="&ensp;your message"></textarea>
 							</label>
 							<input class="button" type="submit" value="Submit" />
-							<input class="button" type="button" onclick="this.form.reset()" value="Reset" />
-							
+							<input class="button" type="button" onclick="this.form.reset()" value="Reset" />		
 						</div>	
 					</form>
 				</div>
 			</div>
-		
 	<!-- end of content section -->	
 		</div>
+		<br /><br /><br /><br /><br /><br />
 		<footer>
 			<br />
 			<!-- javascript for getting and display of current date, without the time -->
+				<p>
 				<script>
 					var today = new Date();
 					var dd = today.getDate();
@@ -113,9 +128,8 @@
 					if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = dd+'-'+mm+'-'+yyyy;
 					document.write(today);
 				</script>
-			<p>&copy;2014 Emer, Luca, Maurizio, Paul, Steven</p>
+			&emsp;&copy;2014 Emer, Luca, Maurizio, Paul, Steven</p>
 		</footer>
 	</div>	
 	</body>
-
 </html>

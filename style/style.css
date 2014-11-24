@@ -1,6 +1,6 @@
-html {
+/*html {
 	-webkit-font-smoothing: antialiased;
-}
+}*/
 /*
 @font-face {
     font-family: myFont;
@@ -26,17 +26,6 @@ html {
 /*
 @font-face {
     font-family: myFont;
-    src: url('goodfoot-webfont.eot');
-    src: url('goodfoot-webfont.eot?#iefix') format('embedded-opentype'),
-         url('goodfoot-webfont.woff') format('woff'),
-         url('goodfoot-webfont.ttf') format('truetype'),
-         url('goodfoot-webfont.svg#goodfoot') format('svg');
-    font-weight: 550;
-    font-style: normal;
-	}	
-
-@font-face {
-    font-family: myFont;
     src: url('Blokletters-Balpen-webfont.eot');
     src: url('Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
          url('Blokletters-Balpen-webfont.woff') format('woff'),
@@ -45,7 +34,6 @@ html {
     font-weight: 550;
     font-style: normal;
 }
-
 */
 @font-face {
     font-family: myHeading;
@@ -60,8 +48,6 @@ html {
 
 #wrapper{
 background-image:url("../image/brickwall_@2X.png");
-/*dark grey background colour in case img not working */
-background-color:#6A7070; 
 font-family: myFont,'Myriad Pro',Helvetica, sans-serif;
 color:#202222;
 padding:1% 3% 3% 3%;
@@ -113,7 +99,6 @@ color:#fff;
 width:70%;
 margin:0 auto;
 font-weight:bold;
-/*padding:0 20px 0 20px;*/
 }
 
 /* nav */
@@ -147,10 +132,6 @@ font-weight:bold;
 	color: #fff;
 	border-radius: 5px;
 }
- /*center nav 
-.nav.center ul {
-	text-align: center;
-}*/
 
 p{
 font:12px;
@@ -201,8 +182,6 @@ display:inline;
 .welcomePara{
 display:inline;
 }
-
-
 
 #flip1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12, #f13, #f14, #f15, #f16, #f17, #f18, #f19, #f20, #f21, #f22{
 margin:0 auto;
@@ -393,6 +372,7 @@ color:#D3D8E4;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 }
+
 
 footer{
 height:25px;
