@@ -86,17 +86,17 @@
 					<form name = "formbox" method="post" action="mailto:emer.thornbury@mystudent.ncirl.ie" onsubmit="return validateForm()" >
 						<div id="formbox">
 							<h2>get in contact:</h2>
-							<label> <span> Your Name</span><input id="fname" type="text" name="name" placeholder="&ensp;your name" required/>  
+							<label> <span> Your Name  (required)</span><input id="fname" type="text" name="name" placeholder="&ensp;your name" required/>  
 							</label>
 							
-							<label><span>Email Address (required)</span><input id="femail" type="text" name="email" placeholder="&ensp;your email" required />
+							<label><span>Email Address  (required)</span><input id="femail" type="text" name="email" placeholder="&ensp;your email" required />
 							</label>
 							
 							<label><span>Subject</span><input id="fsubject" type="text" name="subject" placeholder="&ensp;your topic"/>
 							</label>
 							
 							<label>
-								<span>Message</span><textarea id="ffeedback" name="feedback" placeholder="&ensp;your message"></textarea>
+								<span>Message  (required)</span><textarea id="ffeedback" name="feedback" placeholder="&ensp;your message"></textarea>
 							</label>
 							<input class="button" type="submit" value="Submit" />
 							<input class="button" type="button" onclick="this.form.reset()" value="Reset" />		
