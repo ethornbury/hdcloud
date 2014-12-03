@@ -679,9 +679,8 @@ width: 300px;
 padding: 0px;
 /*margin-left: 10px auto;
 margin-bottom: 10px auto;*/
-
 }
-#tvheading{
+.tvheading{
 color: #554616;
 font-style: italic;
 }
