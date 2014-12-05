@@ -673,20 +673,15 @@ h1{
 }
 
 .youtube-player{
-/*height: 390px;
-width: 480px;*/
 height: 210px;
 width: 300px;
 padding: 0px;
-/*margin-left: 10px auto;
-margin-bottom: 10px auto;*/
 }
 .tvheading{
 color: #554616;
 font-style: italic;
 }
 .tvtop {
-/*image: center;*/
 margin:0 auto;
 text-align: center;
 }
