@@ -686,6 +686,7 @@ color: #554616;
 font-style: italic;
 }
 .tvtop {
-image: center;
+/*image: center;*/
+margin:0 auto;
 text-align: center;
 }
