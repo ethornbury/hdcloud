@@ -378,7 +378,12 @@ color:#D3D8E4;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 }
-
+#music{
+height:auto;
+width:90%;
+margin :0 auto;
+padding:0 30% 0 30%;
+}
 
 footer{
 height:25px;
