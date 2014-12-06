@@ -344,6 +344,26 @@ background:black;
 -webkit-background-clip:padding;
 background-clip:padding-box;
 color:white;
+text-align: center;
+}
+.lefttxt{
+width: 48%;
+display: inline-block;
+text-align: left;
+}
+.rightxt{
+width: 48%;
+display: inline;
+text-align: right;
+}
+.game{
+width: 48%;
+display: inline-block;
+}
+.youtube-game{
+height: 310px;
+width: 400px;
+padding: 0px;
 }
 /*LUCA CSS*/
 
