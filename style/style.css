@@ -337,6 +337,14 @@ background:black;
 background-clip:padding-box;
 color:white;
 }
+#box99
+{
+background:black;
+-moz-background-clip:padding;
+-webkit-background-clip:padding;
+background-clip:padding-box;
+color:white;
+}
 /*LUCA CSS*/
 
 #box15, #box17, #box19, #box22{
